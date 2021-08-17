@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>bank details</title>
+</head>
+
+<body>
+    <div class="grid grid-cols-3 gap-4 mx-60 my-12 h-60 text-2xl ">
+        <div class="bg-blue-600 p-10 text-white border rounded-md ">
+            <h1>Deposit</h1>
+            <p>$<span id="old-deposit">00</span></p>
+        </div>
+        <div class="bg-red-600 p-10 text-white border rounded-md ">
+            <h1>Withdraw</h1>
+            <p>$<span id="old-withdraw">00</span></p>
+        </div>
+        <div class="bg-blue-600 p-10 text-white border rounded-md">
+            <h1>Balance</h1>
+            <p>$<span id="old-balance">12000</span></p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mx-60 my-12 h-60  ">
+        <div class="bg-indigo-300 p-10 border rounded-md brightness-125">
+            <h1 class="text-3xl my-2  text-white">Please Deposit</h1>
+            <input id="deposit-input" type="number" value="" class="rounded border-4"><br>
+            <button id="deposit-btn"
+                class="rounded border-4 text-white py-2 px-2 bg-pink-900 my-2 text-white">Deposit</button>
+        </div>
+        <div class="bg-pink-300 p-10  border rounded-md ">
+            <h1 class="text-3xl my-2 text-white">Please Withdraw</h1>
+            <input id="withdraw-input" type="number" value="" class="rounded border-4"><br>
+            <button id="withdraw-btn"
+                class="rounded border-4 text-white py-2 px-2 bg-pink-600 my-2 text-white">Withdraw</button>
+        </div>
+    </div>
+
+    <script src="js/bank.js"></script>
+</body>
+
+</html>

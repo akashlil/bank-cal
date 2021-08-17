@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .btn {
+            height: 40px;
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        function calculetor(x) {
+            form.display.value = form.display.value + x;
+        }
+
+    </script>
+
+    <div class="col-lg-12" style="
+    height: 400px;
+    width: 500px;
+    margin: 0 auto;">
+        <form action="" name="form">
+            <input type="text" value="" name="display" style="width: 300px;" class="rounded border m-2 px-5 py-3">
+
+
+            <div class="item">
+                <input value="1" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="2" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="3" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="+" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+            </div>
+            <div class="item">
+                <input value="4" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="5" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="6" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="*" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+            </div>
+            <div class="item">
+                <input value="7" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="8" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="9" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="/" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+            </div>
+            <div class="item">
+                <input value="ac" class="btn btn-primary m-2" onclick="display.value='' ">
+                <input value="0" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+                <input value="=" class="btn btn-primary m-2" onclick="form.display.value=(eval(form.display.value))">
+                <input value="-" class="btn btn-primary m-2" onclick="calculetor(this.value)">
+            </div>
+
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
